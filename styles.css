@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Charm:wght@400;700&family=Festive&family=Indie+Flower&family=Jacques+Francois+Shadow&family=Ribeye&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Charm:wght@400;700&family=Indie+Flower&family=Jacques+Francois+Shadow&family=Ribeye&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cabin+Sketch:wght@400;700&family=Charm:wght@400;700&family=Festive&family=Indie+Flower&family=Jacques+Francois+Shadow&family=Ribeye&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cabin+Sketch:wght@400;700&family=Charm:wght@400;700&family=Festive&family=Indie+Flower&family=Jacques+Francois+Shadow&family=Rakkas&family=Ribeye&family=Rock+Salt&family=Rye&family=Sedgwick+Ave+Display&family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cabin+Sketch:wght@400;700&family=Charm:wght@400;700&family=Diplomata+SC&family=Festive&family=Indie+Flower&family=Jacques+Francois+Shadow&family=Kranky&family=Rakkas&family=Ribeye&family=Rock+Salt&family=Rye&family=Sedgwick+Ave+Display&family=Tangerine:wght@400;700&display=swap');
+:root {--rosa: #F9EAFF;
+   --rosa-oscuro: #FFA296;
+   --texto: #5f0721;
+--color: #98B10F; 
+--color1: #7a1ba0; }
+
+
+body{
+      background:
+        linear-gradient(
+            to bottom,
+            rgb(180, 20, 90, 0.4),
+            rgb(255, 120, 180, 0.4),
+            rgb(255, 200, 220, 0.4)
+        ),
+        url("fotos/fondo.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;}
+
+  .item{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .item-superior{display:flex;
+        justify-content: space-around;}
+
+    .libro, .pluma, .corazonc{
+        width: 90px;
+        height: auto;
+        position: static;
+        background: transparent;
+    }
+
+    .linea, .linea-1, .linea-2{
+    position: relative;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(1345deg, var(--color1), var(--rosa-oscuro), var(--color)) ;
+    overflow: hidden;
+        }
+
+     .navbar{
+        padding: 5px 10px;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        font-size: 30px;
+        background: transparent;
+        position: relative;
+        align-content: center;
+        gap: 20px;
+        white-space: nowrap;
+        align-items: center;
+     }
+    
+
+    .navbar a{
+        color: var(--texto);
+        padding: 20px; 
+        margin: 0;
+         font-family: "Charm", cursive;
+        font-style: italic;
+        text-decoration: none;
+     
+    }
+
+    .navbar a:hover{
+        color: var(--rosa-oscuro);
+    }
+
+    .container{
+        width:100%;
+        padding: 0;
+    }
+
+    .gordaf-1{
+        width: 100%;
+        aspect-ratio: 16 / 5;
+        object-fit: cover;
+        object-position: center 30%;
+        margin-top: 50px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        transition: 0.3s;}
+
+    .container img:active {
+    transform: scale(1.05);}
+
+    .container img:hover {
+    transform: scale(1.05);}
+
+    .titulo{
+        width: 100%;
+        margin: 0;
+        display: flex;
+    }
+    .titulo h1{
+        font-family: "Diplomata SC", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 80px;
+        color: var(--texto);
+        -webkit-text-stroke: 2px #000 ;
+        
+        
+
+        position: relative;
+        text-align: center;
+        left: 55px
+    }
+
+ 
+      .titulo p{
+         font-family: "Tangerine", cursive;
+         font-style: normal;
+         font-weight: 700;
+         font-size: 90px;
+          white-space: nowrap;
+         color: var(--color1);
+         -webkit-text-stroke: 1px #6b6464;
+
+         position: relative;
+         right: 450px;
+         text-align: center;
+         top: 120px;
+}
+
+
+.ella{
+   font-family:  "Tangerine", cursive;
+  font-weight:bold;
+  font-size: 100px;
+  font-style: normal;
+  text-align: center;
+
+}
+
+ p{
+    font-size: 2.2rem;
+    line-height: 1.8;
+    font-family: "Rakkas", serif;
+    font-weight: normal;
+    font-style: normal;
+    white-space: normal;
+    text-align: center;
+}
+
+h2{ 
+   font-family:  "Tangerine", cursive;
+  font-weight: bold;
+  font-size: 100px;
+  font-style: normal;
+  text-align: center;
+
+}
+
+.slider {
+  width: 500px;
+  height: 650px;
+  overflow: hidden;
+  position: relative;
+   margin: 0 auto;
+   border-radius: 10%;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: slide 9s infinite;
+  object-fit: cover;
+}
+
+
+h3{ font-family:  "Tangerine", cursive;
+  font-weight: bold;
+  font-size: 100px;
+  font-style: normal;
+  text-align: center;}
+
+#sobornos_aceptados img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+   margin: 45px;
+   box-shadow:  0px 8px 20px rgba(0,0,0,0.3);
+     border: 3px solid transparent;
+}
+
+.container-2 img:active{transform: scale(2.05);}
+.container-2 img:hover{transform: scale(2.05);}
+
+.slider img:nth-child(1) { animation-delay: 0s; }
+.slider img:nth-child(2) { animation-delay: 1.5s; }
+.slider img:nth-child(3) { animation-delay: 3s; }
+.slider img:nth-child(4) { animation-delay: 4.5s; }
+.slider img:nth-child(5) { animation-delay: 6s; }
+.slider img:nth-child(6) { animation-delay: 7.5s; }
+.slider img:nth-child(7) { animation-delay: 9s; }
+.slider img:nth-child(8) { animation-delay: 10.5s; }
+.slider img:nth-child(9) { animation-delay: 12s; }
+.slider img:nth-child(10) { animation-delay: 13.5s; }
+.slider img:nth-child(11) { animation-delay: 15s; }
+.slider img:nth-child(12) { animation-delay: 16.5s; }
+
+@keyframes slide {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
